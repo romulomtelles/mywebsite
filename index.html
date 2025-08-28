@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romulo Telles | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* Light gray background */
+            color: #1f2937; /* Dark gray text */
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-gray-800 rounded-lg transition-colors hover:text-blue-600">Romulo Telles</a>
+            <div class="hidden sm:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Contact</a>
+            </div>
+            <div class="sm:hidden">
+                <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-md">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="sm:hidden hidden bg-white px-4 pt-2 pb-4 space-y-2 text-center shadow-md">
+            <a href="#about" class="block text-gray-800 hover:bg-gray-100 py-2 rounded-lg transition-colors">About</a>
+            <a href="#projects" class="block text-gray-800 hover:bg-gray-100 py-2 rounded-lg transition-colors">Projects</a>
+            <a href="#contact" class="block text-gray-800 hover:bg-gray-100 py-2 rounded-lg transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <section id="home" class="flex flex-col lg:flex-row items-center justify-center lg:justify-between pt-16 lg:pt-24">
+            <div class="text-center lg:text-left lg:w-1/2 mb-8 lg:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Hello, I'm <span class="text-blue-600">Romulo Telles</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-xl mx-auto lg:mx-0">
+                    I am a technologist and educator based in Moncton, Canada. He specializes in IT systems, automation, and IoT solutions, leading innovative projects at Pathsaala Inn & Restaurant while also teaching coding and AI to students through Elephant Thoughts. With a maker’s mindset, he blends technical precision and creativity to build practical, reliable, and inspiring solutions.
+                </p>
+                <div class="mt-8 flex justify-center lg:justify-start space-x-4">
+                    <a href="#contact" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition-colors transform hover:scale-105">
+                        Get in Touch
+                    </a>
+                    <a href="#projects" class="px-6 py-3 bg-gray-200 text-gray-800 font-semibold rounded-full shadow-lg hover:bg-gray-300 transition-colors transform hover:scale-105">
+                        View My Work
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center">
+                <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-1/336495829_190103053762161_2870152177845543225_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=7kNFqbjB1sQQ7kNvwERqTOp&_nc_oc=AdkvOOQu9yOGYXBNPYIyVH6Rm8ol_JcgmZhwkspcsgYrnrwKPd2e0M8Z0Dd1u9-mAZU&_nc_zt=24&_nc_ht=scontent-lga3-1.xx&_nc_gid=ev3PZjdJVgIfgZabfPmWOA&oh=00_AfVxcIBU9Se1N7x2WUyFrbEiVXSVfqM0sDsIgSixvc0SfQ&oe=68B4E0F5" alt="Romulo Telles's Profile Photo" class="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-xl object-cover">
+            </div>
+        </section>
+
+        <section id="about" class="bg-white p-8 sm:p-12 rounded-2xl shadow-lg border border-gray-100">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">About Me</h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                I am a creative professional with 5+ years of experience in designing and developing web applications. My expertise lies in turning complex problems into elegant, intuitive, and accessible designs. I am proficient in modern frontend technologies like React and Vue, and have a strong understanding of design principles and user psychology.
+            </p>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="font-bold text-lg text-blue-600 mb-2">UI/UX Design</h3>
+                    <p class="text-gray-500 text-sm">Figma, Sketch, Adobe XD, Prototyping</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="font-bold text-lg text-blue-600 mb-2">Frontend Development</h3>
+                    <p class="text-gray-500 text-sm">HTML, CSS, JavaScript, React, Tailwind CSS</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="font-bold text-lg text-blue-600 mb-2">Project Management</h3>
+                    <p class="text-gray-500 text-sm">Agile Methodologies, Git, Collaboration</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transform transition-all duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/d1d5db/374151?text=Project+One" alt="Project 1 Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">E-commerce Platform Redesign</h3>
+                        <p class="text-gray-600 text-sm mb-4">A complete overhaul of an existing e-commerce site to improve user flow and conversion rates.</p>
+                        <a href="#" class="inline-block text-blue-600 font-semibold hover:underline">View Case Study &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transform transition-all duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/d1d5db/374151?text=Project+Two" alt="Project 2 Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Mobile Banking App</h3>
+                        <p class="text-gray-600 text-sm mb-4">Designed a secure and intuitive mobile application for a financial services client.</p>
+                        <a href="#" class="inline-block text-blue-600 font-semibold hover:underline">View Case Study &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 transform transition-all duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/d1d5db/374151?text=Project+Three" alt="Project 3 Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Corporate Website Development</h3>
+                        <p class="text-gray-600 text-sm mb-4">Developed a fully responsive and performant corporate website from scratch.</p>
+                        <a href="#" class="inline-block text-blue-600 font-semibold hover:underline">View Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white p-8 sm:p-12 rounded-2xl shadow-lg border border-gray-100">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">Let's Connect</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-8">
+                I'm currently available for new opportunities. Feel free to reach out to me via email or connect with me on LinkedIn.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="mailto:jane.doe@example.com" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition-colors transform hover:scale-105 text-center w-full sm:w-auto">
+                    Email Me
+                </a>
+                <a href="#" target="_blank" class="px-6 py-3 bg-gray-200 text-gray-800 font-semibold rounded-full shadow-lg hover:bg-gray-300 transition-colors transform hover:scale-105 text-center w-full sm:w-auto">
+                    LinkedIn
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6 mt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2023 Romulo Telles. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
